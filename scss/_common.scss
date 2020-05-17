@@ -1,0 +1,81 @@
+@font-face {
+    font-family: nexa;
+    src: url(../fonts/nexa.otf);
+}
+@font-face {
+    font-family: robo-black;
+    src: url(../fonts/RobotoSlab-Black.ttf);
+}
+@font-face {
+    font-family: robo_light;
+    src: url(../fonts/RobotoSlab-Light.ttf);
+}
+@font-face {
+    font-family: robo-bold;
+    src: url(../fonts/RobotoSlab-Bold.ttf);
+}
+@font-face {
+    font-family: robo-medium;
+    src: url(../fonts/RobotoSlab-Medium.ttf);
+}
+@font-face {
+    font-family: robo-regular;
+    src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: robo-semiBold;
+    src: url(../fonts/RobotoSlab-SemiBold.ttf);
+}
+@font-face {
+    font-family: openSans-regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: ms;
+    src: url(../fonts/chinese.msyh.ttf);
+}
+@font-face {
+    font-family: gotham;
+    src: url(../fonts/gotham.otf);
+}
+$laptop: 1024px;
+
+@mixin laptop_max {
+    @media (max-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin laptop_min {
+    @media (min-width: #{$laptop}) {
+        @content;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a,a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.container{
+    max-width: 1420px;
+    
+    @include laptop_min(){
+        width: 95%;
+    }
+}
+body{
+   font-family: robo-regular;
+}
+
+
+// Responsive devices

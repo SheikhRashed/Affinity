@@ -1,0 +1,98 @@
+footer {
+    position: relative;
+    z-index: 999;
+    background:#F8F8FA;
+    // background-color: rgb(98, 102, 105);
+
+    .container{
+        padding: 30px 0px;
+        .brand-logo {
+            .brand-logo-footer{
+                margin-bottom: 30px;
+            }
+        }
+
+        .row_footer_inner{
+            .footer-info{
+                .footer-heading{
+                    font-size: 24ox;
+                    margin-bottom: 20px;
+                    color: #024579;
+                    font-family: nexa;
+                    letter-spacing: 1px;
+                }
+                .info{
+
+                    .info-item{
+                        
+                        .info-link{
+                            font-size: 20px;
+                            // color: rgb(36, 39, 44);
+                            color: #59708B;
+                            word-spacing: 2px;
+                            font-family: openSans-regular;
+                        }
+                    }
+                }
+
+                .social-icons{
+                    display: flex;
+                    align-items: center;
+                    margin-left: -12px;
+                    .s-icons-item{
+                        margin: 0px 10px;
+                        padding: 0px 16px;
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 8px;
+                        background-color: #fff;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .s-icon-link{
+                            color: #BFBFBF;
+                        }
+                    }
+                }
+                .members{
+                 display: flex;
+                 margin-left: -12px;
+                 .info-item-member{
+                     margin: 0 10px;
+
+                     .info-link-member{
+
+                        img{
+                           
+                            @include laptop_max{
+                                width: 100px;
+                            }
+                        }
+                     }
+                 }
+                }
+            }
+        }
+    }
+
+    .bottom-footer {
+        background-color: #024579;
+        .container{
+            padding: 16px 0px;
+
+            .bottom_footer_inner{
+                display: flex;
+                justify-content: center;
+                .f-cont{
+                   margin: 0px 20px;
+                   .text {
+                       font-size: 12px;
+                       color: #F5F1F1;
+                       font-family: ms;
+                   }
+                }
+            }
+        }
+    }
+}
