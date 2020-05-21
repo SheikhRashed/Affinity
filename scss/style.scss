@@ -39,7 +39,17 @@ header{
     
         .container {
 
-
+            .navbar-brand{
+                img{
+                    @include mobile {
+                        max-width: 150px;
+                    }
+                }
+            }
+            .navbar-toggler{
+                outline: none;
+                border: none;
+            }
             .collapse{
                 position: relative;
                 text-align: center;
@@ -198,6 +208,9 @@ header{
                 @include tablet_max {
                     font-size: 20px;
                     line-height: 40px;
+                }
+                @include mobile{
+                    line-height: 28px;
                 }
             }
         }
@@ -427,7 +440,7 @@ header{
                 }
                 img {
                     margin: auto;
-                    
+
                 }
                 .industries_title{
                     font-size: 24px;
@@ -537,6 +550,10 @@ header{
                         color: #707374;
                         line-height: 32px;
                         font-family: robo-regular;
+                        @include mobile{
+                            font-size: 12px;
+                            line-height: 20px;
+                        }
                     }
                 }
             }
@@ -608,6 +625,10 @@ header{
                     color: #fff;
                     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
                     // box-shadow: -8px 42px 35px -13px rgba(0,0,0,0.58);
+                    transition: all 0.2s ease-in-out;
+                    &:hover{
+                        transform: translateY(-10px);
+                    }
                 }
             }
             .help_content_img{
@@ -703,6 +724,11 @@ header{
                     font-weight: 900;
                     text-transform: uppercase;
                     // width: ;
+
+                    @include mobile {
+                        font-size: 34px;
+                        line-height: 48px;
+                    }
                 }
                 .newesletter_subheading{
                     font-size: 26px;
@@ -710,6 +736,10 @@ header{
                     line-height: 36px;
                     margin: 0;
                     color: #fff;
+                    @include moto_g4 {
+                        font-size: 12px;
+                        line-height: 24px;
+                    }
                 }
             }
         }
@@ -728,7 +758,7 @@ header{
                     width: 600px;
                     height: 80px;
                 }
-                @include mobile_max{
+                @include mobile {
                     border-radius: 8px;
                 }
                 input{
@@ -742,21 +772,24 @@ header{
                    outline: none;
                    z-index: 2;
                    background: transparent;
+                   overflow: hidden;
                    &::placeholder {
                        font-size: 21px;
                        color: #7D90A6;
                        font-family: openSans-regular;
-
-                       @include mobile_max{
-                           font-size: 18px;
+                       @include mobile{
+                           font-size: 12px;
                        }
                    }
                   @include tablet_max() {
                       width: 300px;
                   }
-                  @include mobile_max{
-                      width: 222px;
+                  @include mobile {
+                      width: 195px;
                       left: 48px;
+                  }
+                  @include mobile {
+                      left: -38px;
                   }
                 }
                 button{
@@ -800,6 +833,9 @@ header{
                     }
                     @include mobile_max{
                         left: 105px;
+                    }
+                    @include mobile {
+                        left: 12px;
                     }
                     i{
                         

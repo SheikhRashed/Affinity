@@ -97,7 +97,11 @@ footer {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-
+                        @include mobile {
+                            width: 30px;
+                            height: 30px;
+                            margin: 0 6px;
+                        }
                         .s-icon-link{
                             color: #BFBFBF;
                         }
@@ -140,6 +144,9 @@ footer {
                 .f-cont{
                     &.copyright{
                         margin: 0px 20px;
+                        @include moto_g4 {
+                            margin: 0;
+                        }
                         .text {
                             font-size: 12px;
                             color: #F5F1F1;
@@ -154,6 +161,9 @@ footer {
                         @extend .copyright;
                         .text{
                             font-size: 12px;
+                            @include mobile {
+                                font-size: 10px;
+                            }
                         }
                     }
                 }

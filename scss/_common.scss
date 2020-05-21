@@ -76,7 +76,17 @@ $mobile: 576px;
         @content;
     }
 }
-
+// mobiles
+@mixin moto_g4 {
+    @media (min-width: 0px) and (max-width: 360px) {
+        @content;
+    }
+}
+@mixin pixel_2 {
+    @media (min-width: 0px) and (max-width: 411px) {
+        @content;
+    }
+}
 *{
     margin: 0;
     padding: 0;
