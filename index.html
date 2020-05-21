@@ -19,127 +19,68 @@
 <body>
   
   <!-- Header part start -->
-
-  <header class="d-lg-block d-none header w-100">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <!-- <img src="images/logo.png" alt="codespone logo" class="img-fluid dark-logo d-none"> -->
-          <img src="images/affinity logo.png" alt="affinity logo" class="img-fluid white-logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">What we do</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Industries</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Why Affinity</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item nav-active-req">
-              <a class="nav-link" href="#">Request a quote</a>
-            </li>
-          </ul>
-        </div>
+<header class="header">
+  <nav class="navbar navbar-expand-xl navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="images/affinity logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">what we do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Industries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Why Affinity</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact </a>
+          </li>
+          <li class="nav-item req_btn">
+            <a class="nav-link" href="#">Request a quote</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  
-  </header>
-
+    </div>
+  </nav>
+</header>
   <!-- Header part end -->
   
 
-<!--=== Mobile header start ===-->
-
-<div id="sideNav">
-  <div class="d-flex justify-content-between align-items-center">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-reply"></i></a>
-
-    <a href="#" class="btn login-btn">Login</a>
-  </div>
-  <nav>
-    <ul class="p-0" id="mainSideNav">
-      <li class="active nav-li">
-        <a href="index.html"><i class="icon-home icons"></i> Home</a>
-      </li>
-      <li class="nav-li">
-        <a href="about.html"><i class="icon-user-following icons"></i> About Us</a>
-      </li>
-      <li class="nav-li">
-        <a href="index.html#service"><i class="icon-diamond icons"></i>Service</a>
-      </li>
-      <li class="nav-li">
-        <a href="template.html"><i class="icon-grid icons"></i>Free Templates</a>
-      </li>
-      <li class="nav-li">
-        <a href="blog.html"><i class="icon-book-open icons"></i>Blog</a>
-      </li>
-      <li class="nav-li">
-        <a href="contact.html"><i class="icon-bubbles icons"></i>Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-</div>
-
-<header class="d-lg-none d-block mobile-header">
-  <div class="navbar">
-    <a href="index.html">
-      <img src="images/affinity logo.png" class="logo" alt="logo" class="img-fluid">
-    </a>
-    <button class="openbtn btn" onclick="openNav()"><i class="fas fa-toggle-on"></i></button> 
-  </div>
-
-  <script>
-    function openNav() {
-      document.getElementById("sideNav").style.width = "100%";
-    }
-    
-    function closeNav() {
-      document.getElementById("sideNav").style.width = "0";
-    }
-  </script>
-  
-</header>
-<!--=== Mobile header end ===-->
-
-
-  <!-- banner part start -->
-  <section id="banner">
-    <div class="container">
-      <div class="row banner_content">
-        <div class="col-md-8">
-          <div class="bnn_texts">
-            <h2 class="bnnr_head">Because Your <br> Supply Chain Matters.</h2>
-            <p class="bnnr_text">Get the predictable, North American advantage. 
-              Based in Vancouver BC, Affinity has been serving the Industry since 2000. </p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="bnnr_img">
-            <img src="images/banner/assembly 2.png" alt="Assembly">
-          </div>
+<!-- banner part  start -->
+<section id="banner">
+  <div class="container">
+    <div class="row banner_content">
+      <div class="col-md-6 bnnr_text  order-2 order-md-1 order-md-0">
+        <h2>Because your<br>
+          Supply Chain Matters.</h2>
+          <span>Get the predictable, North American advantage. <br> 
+            Based in Vancouver BC, Affinity has been serving the Industry since 2000. </span>
+      </div>
+      <div class="col-md-6 bnnr_img order-1 order-md-2 order-md-0">
+        <div>
+          <img src="images/banner/assembly 2.png" alt="" class="img-fluid">
+          <!-- <img src="images/banner/assembly 2@2x.png" alt=""> -->
         </div>
       </div>
     </div>
-  </section>
-  <!-- banner part end -->
+  </div>
+</section>
 
+<!-- banner part  end -->
 
 
   <!-- inovation part start -->
@@ -166,57 +107,128 @@
         </div>
       </div>
 
-      <div class="row concept_items">
-        <div class="col-md-4 mb-5">
-          <div class="concept_box text-left">
+      <div class="d-none d-sm-block">
+        <div class=" concept_items">
+          <div class="concept_box">
+           <a href="#">
             <img src="images/concept/4.png" alt="conceptbox" class="mb-2">
             <h3 class="cocept_title">Assemblies</h3>
             <p class="concept_para">Mechanical designs that fit. Learn the benefits of our assembly services.
             </p>
+           </a>
           </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <div class="concept_box text-left">
-            <img src="images/concept/7.png" alt="conceptbox" class="mb-2">
-            <h3 class="cocept_title">Fabrication</h3>
-            <p class="concept_para">When machining isn't enough. See how we can help you fabricate what you need.
-
-            </p>
+          <div class="concept_box">
+            <a href="#">
+              <img src="images/concept/7.png" alt="conceptbox" class="mb-2">
+              <h3 class="cocept_title">Fabrication</h3>
+              <p class="concept_para">When machining isn't enough. See how we can help you fabricate what you need.
+    
+              </p>
+            </a>
           </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <div class="concept_box text-left">
-            <img src="images/concept/6.png" alt="conceptbox" class="mb-2">
-            <h3 class="cocept_title">Prototype Development</h3>
-            <p class="concept_para">From concept we really mean it. With a quick turn around see how we can help.
-            </p>
+          <div class="concept_box">
+            <a href="#">
+              <img src="images/concept/6.png" alt="conceptbox" class="mb-2">
+              <h3 class="cocept_title">Prototype Development</h3>
+              <p class="concept_para">From concept we really mean it. With a quick turn around see how we can help.
+              </p>
+            </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="concept_box text-left">
-            <img src="images/concept/3.png" alt="conceptbox" class="mb-2">
-            <h3 class="cocept_title">Design Consultation</h3>
-            <p class="concept_para">Need a second glance ? Our experienced team can help you with the right start.
-            </p>
+          <div class="concept_box">
+            <a href="#">
+              <img src="images/concept/3.png" alt="conceptbox" class="mb-2">
+              <h3 class="cocept_title">Design Consultation</h3>
+              <p class="concept_para">Need a second glance ? Our experienced team can help you with the right start.
+              </p>
+            </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="concept_box text-left">
+          <div class="concept_box">
+           <a href="#">
             <img src="images/concept/4.png" alt="conceptbox" class="mb-2">
             <h3 class="cocept_title">Kanban Management</h3>
             <p class="concept_para">Your inventory managed, stocked  and shipped per your schedules.
             </p>
+           </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="concept_box text-left">
+          <div class="concept_box">
+           <a href="#">
             <img src="images/concept/8.png" alt="conceptbox" class="mb-2">
             <h3 class="cocept_title">Production Runs</h3>
             <p class="concept_para">High quantity, high quality and North American contract. No quantity is too big.
             </p>
+           </a>
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="d-block d-sm-none">
+        <div class="row concept_items concept_slider">
+          <div class="col-md-12">
+            <div class="concept_box">
+              <a href="#">
+               <img src="images/concept/4.png" alt="conceptbox" class="mb-2">
+               <h3 class="cocept_title">Assemblies</h3>
+               <p class="concept_para">Mechanical designs that fit. Learn the benefits of our assembly services.
+               </p>
+              </a>
+             </div>
+          </div>
+          <div class="col-md-12">
+            <div class="concept_box">
+              <a href="#">
+                <img src="images/concept/7.png" alt="conceptbox" class="mb-2">
+                <h3 class="cocept_title">Fabrication</h3>
+                <p class="concept_para">When machining isn't enough. See how we can help you fabricate what you need.
+      
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="concept_box">
+              <a href="#">
+                <img src="images/concept/6.png" alt="conceptbox" class="mb-2">
+                <h3 class="cocept_title">Prototype Development</h3>
+                <p class="concept_para">From concept we really mean it. With a quick turn around see how we can help.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="concept_box">
+              <a href="#">
+                <img src="images/concept/3.png" alt="conceptbox" class="mb-2">
+                <h3 class="cocept_title">Design Consultation</h3>
+                <p class="concept_para">Need a second glance ? Our experienced team can help you with the right start.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="concept_box">
+              <a href="#">
+               <img src="images/concept/4.png" alt="conceptbox" class="mb-2">
+               <h3 class="cocept_title">Kanban Management</h3>
+               <p class="concept_para">Your inventory managed, stocked  and shipped per your schedules.
+               </p>
+              </a>
+             </div>
+          </div>
+          <div class="col-md-12">
+            <div class="concept_box">
+              <a href="#">
+               <img src="images/concept/8.png" alt="conceptbox" class="mb-2">
+               <h3 class="cocept_title">Production Runs</h3>
+               <p class="concept_para">High quantity, high quality and North American contract. No quantity is too big.
+               </p>
+              </a>
+             </div>
           </div>
         </div>
       </div>
+
+
     </div>
   </section>
   <!-- concept part end -->
@@ -224,9 +236,6 @@
   <!-- dots part start -->
 <section id="dots">
   <div class="container">
-    <div class="dots_content">
-      <img src="images/assets/dots-1.png" alt="">
-    </div>
   </div>
 </section>
   <!-- dots part end -->
@@ -242,30 +251,78 @@
             across industries</p>
         </div>
       </div>
+      
+      <div class="d-none d-sm-block">  
+        <div class="row featured_industries">
+          <div class="col-lg-3 col-md-6">
+            <div class="industries_content text-center mt-sm-0">
+              <a href="#">
+              <img src="images/featured/laser-optics.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Optices & Photonics</h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="industries_content text-center">
+            <a href="#">
+              <img src="images/featured/th.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Medical Instruments</h3>
+            </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="industries_content text-center">
+              <a href="#">
+              <img src="images/featured/robotic.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Robotics</h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="industries_content text-center">
+            <a href="#">
+              <img src="images/featured/th.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Automation</h3>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="row featured_industries">
-        <div class="col-md-3">
-          <div class="industries_content text-center">
-            <img src="images/featured/laser-optics.png" alt="laser optices" class="mb-3">
-            <h3 class="industries_title">Optices & Photonics</h3>
+            
+      <div class="d-block d-sm-none">  
+        <div class="row featured_industries featured_slider">
+          <div class="col-12">
+            <div class="industries_content text-center mt-sm-0">
+              <a href="#">
+              <img src="images/featured/laser-optics.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Optices & Photonics</h3>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="industries_content text-center">
-            <img src="images/featured/th.png" alt="laser optices" class="mb-3">
-            <h3 class="industries_title">Medical Instruments</h3>
+          <div class="col-12">
+            <div class="industries_content text-center">
+            <a href="#">
+              <img src="images/featured/th.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Medical Instruments</h3>
+            </a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="industries_content text-center">
-            <img src="images/featured/robotic.png" alt="laser optices" class="mb-3">
-            <h3 class="industries_title">Robotics</h3>
+          <div class="col-12">
+            <div class="industries_content text-center">
+              <a href="#">
+              <img src="images/featured/robotic.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Robotics</h3>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="industries_content text-center">
-            <img src="images/featured/th.png" alt="laser optices" class="mb-3">
-            <h3 class="industries_title">Automation</h3>
+          <div class="col-12">
+            <div class="industries_content text-center">
+            <a href="#">
+              <img src="images/featured/th.png" alt="laser optices" class="mb-3">
+              <h3 class="industries_title">Automation</h3>
+            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -284,40 +341,40 @@
       </div>
   </div>
   <div class="row advantage_content">
-    <div class="col-lg-6 col-md-12">
+    <div class="advantage_col">
       <ul class="advantage_box">
         <li class="advantage_box_img"><img src="images/advantage/iso-9001-2015.png" alt=""></li>
         <li class="advantage_box_text">ISO 9001:2015 certified</li>
       </ul>
     </div>
-    <div class="col-lg-6 col-md-12">
+    <div class="advantage_col">
       <ul class="advantage_box">
         <li class="advantage_box_img"><img src="images/advantage/tool-box.png" alt=""></li>
         <li class="advantage_box_text">Equipped to handle miniature components 
           to large mechanical parts and assemblies</li>
       </ul>
     </div>
-    <div class="col-lg-6 col-md-12">
+    <div class="advantage_col">
       <ul class="advantage_box">
         <li class="advantage_box_img"><img src="images/advantage/tool-box.png" alt=""></li>
         <li class="advantage_box_text">30,000 square feet facility with 
           possibility for expansion</li>
       </ul>
     </div>
-    <div class="col-lg-6 col-md-12">
+    <div class="advantage_col">
       <ul class="advantage_box">
         <li class="advantage_box_img"><img src="images/advantage/car-parts.png" alt=""></li>
         <li class="advantage_box_text">Wide range of tools and 
           materials expertise</li>
       </ul>
     </div>
-    <div class="col-lg-6 col-md-12">
+    <div class="advantage_col">
       <ul class="advantage_box">
         <li class="advantage_box_img"><img src="images/advantage/folder.png" alt=""></li>
         <li class="advantage_box_text">Confidentiality & NDA</li>
       </ul>
     </div>
-    <div class="col-lg-6 col-md-12">
+    <div class="advantage_col">
       <ul class="advantage_box">
         <li class="advantage_box_img"><img src="images/advantage/check-list.png" alt=""></li>
         <li class="advantage_box_text">Highly skilled & experienced team with 
@@ -345,7 +402,7 @@
         </div>
         <div class="col-md-4">
           <div class="help_content_img">
-            <img src="images/help/executive.png" alt="" class="img-fluid">
+            <img src="images/help/executive.png" alt="" class="img-fluid d-none">
           </div>
         </div>
       </div>
@@ -354,34 +411,34 @@
   <!-- Help part end -->
 
   <!-- Partner part start -->
-  <section id="partner">
-    <div class="container">
-      <div class="row partner_inner">
-        <div class="partner_heading_content text-center mx-auto">
-          <h2 class="partner_head">Trusted by</h2>
-          <p class="partner_subheading">Dozens of Enterprises, SME's and Startups</p>
-        </div>
+<section id="partner">
+  <div class="container">
+    <div class="row partner_content">
+      <div class="col-md-12 text-center ">
+        <h2 class=" partner_heading">Trusted By</h2>
+        <p class="partner_subheading">Dozens of Enterprises, SME's and Startups</p>
+      </div>
     </div>
     
-    <div class="row partner_slider">
-      <div class="col-md-12 slider">
-         <div class="p-img"> <img src="images/Partner/ubc.png" alt="ubc"></div>
+    <div class="partner_slider row">
+      <div class=" slide_box">
+        <span class="partner_img"><a href="#"><img src="images/Partner/boeing-1.png" alt=""></a></span>
       </div>
-      <div class="col-md-12 slider">
-         <div class="p-img"> <img src="images/Partner/boeing-1.png" alt="boeing"></div>
+      <div class=" slide_box">
+        <span class="partner_img"><a href="#"><img src="images/Partner/kodak.png" alt=""></a></span>
       </div>
-      <div class="col-md-12 slider">
-         <div class="p-img"> <img src="images/Partner/lmi.png" alt="lmi"></div>
+      <div class=" slide_box">
+        <span class="partner_img"><a href="#"><img src="images/Partner/lmi.png" alt=""></a></span>
       </div>
-      <div class="col-md-12 slider">
-         <div class="p-img"> <img src="images/Partner/stryker.png" alt="stryker"></div>
+      <div class=" slide_box">
+        <span class="partner_img"><a href="#"><img src="images/Partner/stryker.png" alt=""></a></span>
       </div>
-      <div class="col-md-12 slider">
-         <div class="p-img"> <img src="images/Partner/ubc.png" alt=""></div>
+      <div class=" slide_box">
+        <span class="partner_img"><a href="#"><img src="images/Partner/ubc.png" alt=""></a></span>
       </div>
     </div>
-    </div>
-  </section>
+  </div>
+</section>
   <!-- Partner part end -->
 
   <!-- newslatter  part start -->
@@ -408,10 +465,12 @@
   <!-- Footer part start -->
   <footer id="footer_section">
     <div class="container">
-      <div class="row brand-logo">
+      <div class="footer_top">
+        <div class="row brand-logo d-none d-md-block">
           <img src="images/affinity logo.png" alt="" class="brand-logo-footer">
       </div>
-      <div class="row_footer_inner row">
+      <!-- For large devices -->
+      <div class="row_footer_inner row footer_lg">
         <div class="col-lg-3 col-md-6 footer-1_head footer-info Address">
           <h3 class="footer-heading">Address</h3>
           <ul class="info">
@@ -425,6 +484,15 @@
             <li class="info-item"><a href="#" class="info-link">Fax +1 604 591 6022</a></li>
             <li class="info-item"><a href="#" class="info-link">Email: sales@machining.ca</a></li>
             <li class="info-item"><a href="#" class="info-link">ISO Certified</a></li>
+          </ul>
+
+          <ul class="info social-icons d-md-none">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-6 footer-2_head footer-info Our Services">
@@ -455,6 +523,14 @@
             <li class="info-item"><a href="#" class="info-link">Resources</a></li>
             <li class="info-item"><a href="#" class="info-link">Contact</a></li>
           </ul>
+          <ul class="info social-icons d-md-none">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-4_head footer-info">
@@ -467,7 +543,118 @@
             <li class="info-item-member"><a href="#" class="info-link-member"><img src="images/footer/4.png" alt=""></a></li>
             <li class="info-item-member"><a href="#" class="info-link-member"><img src="images/footer/1.png" alt=""></a></li>
           </ul>
+
+          <ul class="info social-icons d-md-none">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
         </div>
+      </div>
+
+      <!-- for sm devices -->
+      <div class="row_footer_inner row footer_sm footer_slider">
+        <div class="col-lg-3 col-md-6 footer-1_head footer-info Address">
+          <div class="brand_img_logo">
+            <img src="images/brand_logo.png" alt="" class="brand-logo-footer">
+          </div>
+          <h3 class=" footer-heading">Address</h3>
+          <ul class="info">
+            <li class="info-item"><a href="#" class="info-link">Affinity Manufacturing Ltd.</a></li>
+            <li class="info-item"><a href="#" class="info-link">7505- 134A street</a></li>
+            <li class="info-item"><a href="#" class="info-link">Surrey, BC V3w 7b3</a></li>
+            <li class="info-item"><a href="#" class="info-link">Canada</a></li>
+          </ul>
+          <ul class="info">
+            <li class="info-item"><a href="#" class="info-link">Tell +1 604 591 6667</a></li>
+            <li class="info-item"><a href="#" class="info-link">Fax +1 604 591 6022</a></li>
+            <li class="info-item"><a href="#" class="info-link">Email: sales@machining.ca</a></li>
+            <li class="info-item"><a href="#" class="info-link">ISO Certified</a></li>
+          </ul>
+
+          <ul class="info social-icons">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 footer-2_head footer-info Our Services">
+          <div class="brand_img_logo">
+            <img src="images/brand_logo.png" alt="" class="brand-logo-footer">
+          </div>
+          <h3 class="footer-heading">Our Services</h3>
+          <ul class="info">
+            <li class="info-item"><a href="#" class="info-link">Prototype Development</a></li>
+            <li class="info-item"><a href="#" class="info-link">Production Runs</a></li>
+            <li class="info-item"><a href="#" class="info-link">Turnkey & Assemblies</a></li>
+            <li class="info-item"><a href="#" class="info-link">Design for Manufacturability Consultation</a></li>
+            <li class="info-item"><a href="#" class="info-link">Fabrication</a></li>
+            <li class="info-item"><a href="#" class="info-link">CMM Reports, COC & More</a></li>
+          </ul>
+
+          <ul class="info social-icons ">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-3_head footer-info About">
+          <div class="brand_img_logo">
+            <img src="images/brand_logo.png" alt="" class="brand-logo-footer">
+          </div>
+          <h3 class="footer-heading">About</h3>
+          <ul class="info">
+            <li class="info-item"><a href="#" class="info-link">Why Affinity</a></li>
+            <li class="info-item"><a href="#" class="info-link">Industries</a></li>
+            <li class="info-item"><a href="#" class="info-link">Resources</a></li>
+            <li class="info-item"><a href="#" class="info-link">Contact</a></li>
+          </ul>
+          <ul class="info social-icons d-md-none">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-4_head footer-info">
+          <div class="brand_img_logo">
+            <img src="images/brand_logo.png" alt="" class="brand-logo-footer">
+          </div>
+          <h3 class="footer-heading">Proud Member</h3>
+          <ul class="members">
+            <li class="info-item-member"><a href="#" class="info-link-member"><img src="images/footer/2.png" alt=""></a></li>
+            <li class="info-item-member"><a href="#" class="info-link-member"><img src="images/footer/3.png" alt=""></a></li>
+          </ul>
+          <ul class="members">
+            <li class="info-item-member"><a href="#" class="info-link-member"><img src="images/footer/4.png" alt=""></a></li>
+            <li class="info-item-member"><a href="#" class="info-link-member"><img src="images/footer/1.png" alt=""></a></li>
+          </ul>
+
+          <ul class="info social-icons d-md-none">
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-instagram"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-twitter"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-youtube"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="s-icons-item"><a href="#" class="s-icon-link"><i class="fas fa-share-alt"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
       </div>
     </div>
     <div class="bottom-footer ">
@@ -486,14 +673,14 @@
   <!-- Footer part end -->
 
   <!-- Jquery js -->
-  <script src="/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
   <!-- Popper min.js -->
-  <script src="/js/popper.min.js"></script>
+  <script src="js/popper.min.js"></script>
   <!-- bootstrap min.js -->
-  <script src="/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- Slick slider -->
-  <script src="/js/slick.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <!-- Main custom js -->
-  <script src="/js/app.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

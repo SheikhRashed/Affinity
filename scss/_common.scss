@@ -38,16 +38,41 @@
     font-family: gotham;
     src: url(../fonts/gotham.otf);
 }
-$laptop: 1024px;
 
+
+
+$laptop: 1024px;
+$tablet: 767px;
+$mobile: 576px;
 @mixin laptop_max {
     @media (max-width: #{$laptop}) {
         @content;
     }
-}
+}   
 
 @mixin laptop_min {
     @media (min-width: #{$laptop}) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (min-width: 767px) and (max-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin tablet_max {
+    @media(max-width: #{$tablet}) {
+        @content;
+    }
+}
+@mixin  mobile_max {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }    
+}
+@mixin mobile {
+    @media(min-width: 0px) and (max-width: #{$mobile}){
         @content;
     }
 }
@@ -67,15 +92,24 @@ a,a:hover,a:focus{
 }
 
 .container{
-    max-width: 1420px;
+    max-width: 1460px;
     
     @include laptop_min(){
         width: 95%;
     }
+    @include tablet_max(){
+        width: 85%;
+    }
 }
 body{
+    // position: relative;
    font-family: robo-regular;
+   overflow-x: hidden;
 }
 
-
+.h-w{
+    // background-color: #fff ;
+    // transform: translateY(-2px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
 // Responsive devices
