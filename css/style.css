@@ -442,6 +442,7 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: 1px solid #ddd;
+    margin-bottom: 30px;
   }
 }
 
@@ -713,6 +714,12 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   padding: 30px 40px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  #advantage .container .advantage_content .advantage_col .advantage_box {
+    margin-bottom: 30px;
+  }
 }
 
 #advantage .container .advantage_content .advantage_col .advantage_box:hover {
