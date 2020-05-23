@@ -48,7 +48,7 @@ $mobile: 576px;
     @media (max-width: #{$laptop}) {
         @content;
     }
-}   
+}
 
 @mixin laptop_min {
     @media (min-width: #{$laptop}) {

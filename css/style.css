@@ -180,6 +180,13 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  #banner {
+    background: #fff;
+  }
 }
 
 #banner::before {
@@ -190,6 +197,36 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   width: 65.5%;
   height: 100%;
   background: #fff;
+}
+
+@media (max-width: 1024px) {
+  #banner::before {
+    display: none;
+  }
+}
+
+#banner .container .dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#banner .container .dots img {
+  height: 470px;
+  width: 100px;
+}
+
+@media (min-width: 0px) and (max-width: 1750px) {
+  #banner .container .dots {
+    display: none;
+  }
+}
+
+#banner .container .assets {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
@@ -272,12 +309,19 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   }
 }
 
+@media (min-width: 0px) and (max-width: 576px) {
+  #banner .container .banner_content .bnnr_img img {
+    margin-bottom: 30px;
+  }
+}
+
 /* banner section end */
 /* innovation section start */
 #innovation {
   background: url(../images/innovation/milling3R.png) center center/cover no-repeat;
   padding: 118px 0px;
   position: relative;
+  z-index: 3;
 }
 
 @media (max-width: 767px) {
@@ -325,6 +369,7 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 /* concept section start */
 #concept {
   padding: 118px 0px;
+  position: relative;
 }
 
 @media (max-width: 1024px) {
@@ -333,8 +378,77 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   }
 }
 
+#concept .container .assets {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  #concept .container .assets {
+    display: none;
+  }
+}
+
+#concept .container .assets img {
+  width: 650px;
+  height: 550px;
+}
+
+#concept .container .assets_round {
+  position: absolute;
+  z-index: -1;
+  top: 15%;
+  right: 54%;
+}
+
+@media (max-width: 1024px) {
+  #concept .container .assets_round {
+    top: 10%;
+  }
+}
+
+@media (max-width: 767px) {
+  #concept .container .assets_round {
+    top: 5%;
+  }
+}
+
+#concept .container .assets_sm {
+  position: absolute;
+  z-index: -1;
+  bottom: -1182px;
+  left: 0px;
+}
+
+#concept .container .assets_sm img {
+  height: 1400px;
+  width: 915px;
+}
+
+@media (max-width: 1024px) {
+  #concept .container .assets_sm img {
+    width: 350px;
+    height: 1250px;
+  }
+}
+
+@media (max-width: 767px) {
+  #concept .container .assets_sm img {
+    width: 285px;
+    height: 1100px;
+  }
+}
+
+#concept .container .dots {
+  position: absolute;
+  left: 0;
+  top: -65px;
+}
+
 #concept .container .concept_inner {
-  padding: 60px 0px;
+  padding: 35px 0px;
 }
 
 #concept .container .concept_inner .concept_heading_content {
@@ -472,6 +586,10 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 
 /* concept section end */
 /* dots section start */
+#dots {
+  position: relative;
+}
+
 #dots .container {
   background: url(../images/assets/dots-1.png) center center/cover no-repeat;
   height: 140px;
@@ -480,14 +598,9 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 /* dots section end */
 /* featured section start */
 #featured {
-  padding: 118px 0px;
   position: relative;
-}
-
-@media (max-width: 1024px) {
-  #featured {
-    padding: 60px 0px;
-  }
+  padding: 60px 0px;
+  position: relative;
 }
 
 #featured .container .assets {
@@ -610,7 +723,6 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 /* advantage section start */
 #advantage {
   position: relative;
-  overflow: visible;
   padding: 118px 0px;
 }
 
@@ -620,21 +732,44 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   }
 }
 
-#advantage .container {
-  border-top: 1px solid #707070;
+#advantage .assets {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -535px;
 }
 
-#advantage .container .assets {
-  position: absolute;
-  top: -415px;
-  right: 10px;
-  z-index: -1;
-  display: none;
+@media (max-width: 1024px) {
+  #advantage .assets {
+    top: 40%;
+  }
+}
+
+#advantage .assets img {
+  width: 930px;
+  height: 1500px;
+}
+
+@media (max-width: 1024px) {
+  #advantage .assets img {
+    width: 300px;
+    height: 750px;
+  }
+}
+
+#advantage .container {
+  border-top: 1px solid #707070;
 }
 
 #advantage .container .advantage_inner .advantage_heading_content {
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  #advantage .container .advantage_inner .advantage_heading_content {
+    margin-top: 100px;
+  }
 }
 
 #advantage .container .advantage_inner .advantage_heading_content .advantage_head {
@@ -753,7 +888,6 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 #help {
   background: #EBEBEB;
   position: relative;
-  z-index: 999;
   min-height: 570px;
 }
 
@@ -763,11 +897,16 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
   }
 }
 
-#help .container .dots {
+#help .dots {
   position: absolute;
+  z-index: 1;
   top: -60px;
   right: 0px;
-  display: none;
+}
+
+#help .dots img {
+  width: 400px;
+  height: 150px;
 }
 
 #help .container .help_inner .help_content {
@@ -838,6 +977,18 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 #help .container .help_inner .help_content_img {
   position: absolute;
   top: -48px;
+  right: 0px;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  #help .container .help_inner .help_content_img {
+    position: relative;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translate(-12%);
+            transform: translate(-12%);
+  }
 }
 
 /*help section  end */

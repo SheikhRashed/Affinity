@@ -97,6 +97,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    @include laptop_max {
+        background: #fff;
+    }
     &::before{
         content: '';
         position: absolute;
@@ -105,8 +109,33 @@ header{
         width: 65.5%;
         height: 100%;
         background: #fff;
+
+        @include laptop_max{
+            display: none;
+        }
     }
     .container {
+        .dots {
+            position: absolute;
+            top: 0;
+            left: 0;
+            img{
+                height: 470px;
+                width: 100px;
+            }
+           @media (min-width: 0px) and(max-width: 1750px) {
+               display: none; 
+           }
+        }
+        .assets{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            img{
+
+            }
+        }
         .banner_content{
 
             @include laptop {
@@ -159,6 +188,9 @@ header{
                     @include tablet_max {
                         max-width: 300px;
                     }
+                    @include mobile {
+                        margin-bottom: 30px;
+                    }
                 }
             }
         }
@@ -177,6 +209,7 @@ header{
     background: url(../images/innovation/milling3R.png) center center/cover no-repeat;
     padding: 118px 0px;
     position: relative;
+    z-index: 3;
     // z-index: 12;
     @include tablet_max {
         padding: 60px 0px;
@@ -221,13 +254,69 @@ header{
 /* concept section start */
 #concept {
     padding: 118px 0px;
+    position: relative;
     @include laptop_max {
         padding: 60px 0px;
     }
     .container{
+        .assets {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            @include laptop_max{
+                display: none;
+            }
+            img{
+                width: 650px;
+                height: 550px;
+            }
+        }
+        .assets_round{
+            position: absolute;
+            z-index: -1;
+            top: 15%;
+            right: 54%;
+            @include laptop_max{
+                top: 10%;
+            }
+            @include tablet_max{
+                top: 5%;
+            }
+            img{
 
+            }
+        }
+        .assets_sm {
+            position: absolute;
+            z-index: -1;
+            bottom: -1182px;
+            left: 0px;
+            img{
+                height: 1400px;
+                width: 915px;
+
+                @include laptop_max {
+                    width: 350px;
+                    height: 1250px;
+                }
+                @include tablet_max{
+                    width: 285px;
+                    height: 1100px;
+                }
+            }
+        }
+        .dots{
+            position: absolute;
+            left: 0;
+            top: -65px;
+            // z-index: -1;
+            img{
+
+            }
+        }
         .concept_inner {
-            padding: 60px 0px;
+            padding: 35px 0px;
             .concept_heading_content{
                 padding: 15px 0px;
                 @include tablet_max {
@@ -336,6 +425,7 @@ header{
 
 /* dots section start */
 #dots {
+    position: relative;
     // padding: 30px 0px;
     .container{
         background: url(../images/assets/dots-1.png) center center/cover no-repeat;
@@ -356,9 +446,10 @@ header{
 
 /* featured section start */
 #featured {
-    padding: 118px 0px;
+    position: relative;
+    padding: 60px 0px;
     @include laptop_max {
-        padding: 60px 0px;
+        // padding: 60px 0px;
     }
     // z-index: -1;
     position: relative;
@@ -460,28 +551,37 @@ header{
 #advantage{
     // z-index: -1;
     position: relative;
-    overflow: visible;
     padding: 118px 0px;
     @include laptop_max {
         padding: 60px 0px;
     }
+    .assets {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: -535px;
+        @include laptop_max{
+          top: 40%;
+        }
+        img{
+            width: 930px;
+            height: 1500px;
+            @include laptop_max{
+                width: 300px;
+                height: 750px;
+            }
+        }
+    }
     .container{
-        
          border-top: 1px solid #707070;
-
-         .assets{
-             position: absolute;
-             top: -415px;
-             right: 10px;
-             z-index: -1;
-             display: none;
-         }
         .advantage_inner{
             
             .advantage_heading_content{
                 margin-top: 60px;
                 margin-bottom: 60px;
-
+                @include mobile {
+                    margin-top: 100px;
+                }
                 .advantage_head {
                     position: relative;
                     font-size: 55px;
@@ -570,18 +670,24 @@ header{
 #help {
     background:#EBEBEB;
     position: relative;
-    z-index: 999;
+    // z-index: 999;
     min-height: 570px;
     @include tablet_max {
         min-height: 435px;
     }
-    .container{
-        .dots {
-            position: absolute;
-            top: -60px;
-            right: 0px;
-            display: none;
+    .dots {
+        position: absolute;
+        z-index: 1;
+        top: -60px;
+        right: 0px;
+        // display: none;
+        img{
+            width: 400px;
+            height: 150px;
         }
+    }
+    .container{
+
         .help_inner{
             .help_content{
                 padding: 90px 0px;
@@ -638,6 +744,14 @@ header{
             .help_content_img{
                 position: absolute;
                 top: -48px;
+                right: 0px;
+                z-index: 2;
+                @include tablet_max{
+                    position: relative;
+                    left: 50%;
+                    top: 0;
+                    transform: translate(-12%);
+                }
             }
         }
     }
