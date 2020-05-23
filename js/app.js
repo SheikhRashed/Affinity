@@ -59,7 +59,8 @@ $('.partner_slider').slick({
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
       }
     },
 
@@ -81,7 +82,7 @@ $('.concept_slider').slick({
   autoplay: false,
   autoplaySpeed: 2000,
   arrows: false,
-  dots: false,
+  dots: true,
   infinite: true,
   // responsive: [
   //   {
@@ -115,7 +116,7 @@ $('.featured_slider').slick({
   autoplay: false,
   autoplaySpeed: 2000,
   arrows: false,
-  dots: false,
+  dots: true,
   infinite: true,
   // responsive: [
   //   {
