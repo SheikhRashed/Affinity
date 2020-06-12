@@ -624,7 +624,7 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link {
 }
 
 #concept .container .concept_items .slick-dots li.slick-active {
-  background: red;
+  background: #F2994A;
 }
 
 #concept .container .concept_items .slick-dots li button {
